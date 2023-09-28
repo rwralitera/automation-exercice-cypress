@@ -1,0 +1,16 @@
+{
+  "git.ignoreLimitWarning": true,
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": false,
+  "cSpell.words": ["mochawesome"],
+  "eslint.enable": true,
+  "eslint.alwaysShowStatus": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.validate": [
+    "javascript",
+    "typescript"
+  ]
+}

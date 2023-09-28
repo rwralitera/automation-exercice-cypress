@@ -1,0 +1,56 @@
+{
+  "name": "tpcypress3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "tsc --noEmit",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "report:merge": "npx mochawesome-merge \"cypress/results/*.json\" > mochawesome.json",
+    "report:html": "npx marge mochawesome.json",
+    "format": "prettier --write \"./**/*.{js,ts}\"",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mahefasolofo/TpCypress3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mahefasolofo/TpCypress3/issues"
+  },
+  "homepage": "https://github.com/mahefasolofo/TpCypress3#readme",
+  "devDependencies": {
+    "@faker-js/faker": "^7.6.0",
+    "@typescript-eslint/eslint-plugin": "^5.49.0",
+    "@typescript-eslint/parser": "^5.49.0",
+    "cypress": "^12.3.0",
+    "cypress-mochawesome-reporter": "^3.2.3",
+    "cypress-multi-reporters": "^1.6.2",
+    "eslint": "^8.32.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-cypress": "^2.12.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.1",
+    "fs": "^0.0.1-security",
+    "husky": "^8.0.0",
+    "junit-merge": "^2.0.0",
+    "lint": "^0.8.19",
+    "lint-staged": "^13.1.0",
+    "mocha-junit-reporter": "^2.2.0",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.2.2",
+    "mochawesome-report-generator": "^6.2.0",
+    "prettier": "2.8.3",
+    "typescript": "^4.9.4"
+  },
+  "lint-staged": {
+    "cypress/**/**/*.{js,jsx,ts,tsx}": [
+      "npx prettier --write",
+      "npx eslint --fix"
+    ]
+  }
+}

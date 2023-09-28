@@ -1,0 +1,15 @@
+#screenshot & videos
+cypress/screenshots/*
+cypress/videos/*
+
+#reports
+mochawesome-report
+mochawesome.json
+
+#node_moduels
+node_modules
+results
+
+.DS_Store
+
+
