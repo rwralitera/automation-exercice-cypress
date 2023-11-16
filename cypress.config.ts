@@ -2,7 +2,6 @@ import { defineConfig } from 'cypress'
 // import * from 'fs'
 
 export default defineConfig({
-  projectId: 'avmyts',
   reporter: 'mochawesome',
   reporterOptions: {
     reportDir: 'cypress/results',

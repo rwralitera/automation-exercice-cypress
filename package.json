@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "tsc --noEmit",
     "cy:open": "cypress open",
-    "cy:run": "cypress run --record --key b41ebf8b-106f-45cb-8a25-57f765652fce",
+    "cy:run": "cypress run",
     "report:merge": "npx mochawesome-merge \"cypress/results/*.json\" > mochawesome.json",
     "report:html": "npx marge mochawesome.json",
     "format": "prettier --write \"./**/*.{js,ts}\"",
