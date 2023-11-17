@@ -34,7 +34,7 @@ describe('Contact_us navigation', () => {
     //verification
     cy.get(selectors.inputFile)
       .should('have.prop', 'files')
-      .and('have.length', 1)
+      .and('have.length', 2)
       .its('0')
   })
 })
