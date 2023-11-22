@@ -1,0 +1,8 @@
+{
+  "baseUrl": "http://localhost:9000/",
+  "experimentalSessionSupport": true,
+  "env": {
+    "END_POINT_URL": "http://localhost:9000/",
+    "API_URL": "api/"
+  }
+}
