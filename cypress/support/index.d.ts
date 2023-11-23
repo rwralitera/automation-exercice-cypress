@@ -10,13 +10,6 @@ declare namespace Cypress {
      * @example cy.deleteUser(email,password)
      */
     // eslint-disable-next-line no-unused-vars
-    saveLocalStorage(): void
-    restoreLocalStorage(): void
-    shouldHaveTrimmedText(equalTo: string): Cypress.Chainable<any>
-    getCountsFromTextInfo(): Cypress.Chainable<any>
-    // login commands
-    apiLogin(username: string, password: string): Cypress.Chainable<any>
-    webLogin(username: string, password: string): void
     deleteUser(email: string, password: string): Chainable<null>
     createUser(
       // eslint-disable-next-line no-unused-vars
