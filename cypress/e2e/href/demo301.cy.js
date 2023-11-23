@@ -1,11 +1,6 @@
 describe('Test des liens href', () => {
   it('Vérifie que tous les liens href fonctionnent avec une réponse 200 OK', () => {
-    cy.visit('https://www.facebook.com/')
-
-
-
-
-    
+    cy.visit('https://www.facebook.com/');
 
     cy.get('a[href]').each((lien) => {
       cy.request({
