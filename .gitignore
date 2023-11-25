@@ -9,7 +9,6 @@ mochawesome.json
 #node_moduels
 node_modules
 results
-reports
 
 .DS_Store
 
